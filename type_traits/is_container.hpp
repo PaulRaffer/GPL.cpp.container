@@ -6,8 +6,8 @@
 
 #if __cplusplus >= 201703L
 
-#ifndef RAFFER_CONTAINER_IS_CONTAINER_HPP
-#define RAFFER_CONTAINER_IS_CONTAINER_HPP
+#ifndef RAFFER_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
+#define RAFFER_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
 
 
 #include <type_traits>
@@ -58,6 +58,6 @@ template <typename C> constexpr auto is_container_v = is_container<C>::value;
 } // namespace raffer
 
 
-#endif // RAFFER_CONTAINER_IS_CONTAINER_HPP
+#endif // RAFFER_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
 
 #endif // __cplusplus >= 201703L
