@@ -6,8 +6,8 @@
 
 #if __cplusplus >= 201703L
 
-#ifndef RAFFER_CONTAINER_TYPE_TRAITS_IS_STL_CONTAINER_HPP
-#define RAFFER_CONTAINER_TYPE_TRAITS_IS_STL_CONTAINER_HPP
+#ifndef GPL_CONTAINER_TYPE_TRAITS_IS_STL_CONTAINER_HPP
+#define GPL_CONTAINER_TYPE_TRAITS_IS_STL_CONTAINER_HPP
 
 
 #include <type_traits>
@@ -28,7 +28,7 @@
 #include <unordered_map>
 
 
-namespace raffer // interface
+namespace gpl // interface
 {
 
 template <typename C> struct is_stl_container : std::false_type {};
@@ -57,9 +57,9 @@ template <typename... Args> struct is_stl_container<std::unordered_multimap<Args
 
 template <typename C> constexpr auto is_stl_container_v = is_stl_container<C>::value;
 
-} // namespace raffer
+} // namespace gpl
 
 
-#endif // RAFFER_CONTAINER_TYPE_TRAITS_IS_STL_CONTAINER_HPP
+#endif // GPL_CONTAINER_TYPE_TRAITS_IS_STL_CONTAINER_HPP
 
 #endif // __cplusplus >= 201703L

@@ -1,20 +1,20 @@
 
-// Copyright (c) 2020 Paul Raffer.
+// Copyright Paul Raffer 2020.
 // Distributed under the Boost Software License, Version 1.0.
-// (See accompanying file LICENSE_1_0.txt or copy at
+// (See accompanying file LICENSE or copy at
 // https://www.boost.org/LICENSE_1_0.txt)
 
 #if __cplusplus >= 201703L
 
-#ifndef RAFFER_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
-#define RAFFER_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
+#ifndef GPL_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
+#define GPL_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
 
 
 #include <type_traits>
 #include <iterator>
 
 
-namespace raffer // interface
+namespace gpl // interface
 {
 
 template <typename T> T value;
@@ -55,9 +55,9 @@ template <typename C> struct is_container<C, std::enable_if_t<
 
 template <typename C> constexpr auto is_container_v = is_container<C>::value;
 
-} // namespace raffer
+} // namespace gpl
 
 
-#endif // RAFFER_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
+#endif // GPL_CONTAINER_TYPE_TRAITS_IS_CONTAINER_HPP
 
 #endif // __cplusplus >= 201703L
